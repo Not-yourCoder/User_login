@@ -1,0 +1,100 @@
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    height: 500px;
+    width: 300px;
+
+} 
+a{
+    text-decoration: none;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0066b2;
+    font-size: 30px;
+    color: #fff;
+}
+p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#03965e
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.container form{
+    padding: 40px;
+    box-sizing: border-box;
+}
+.textfield{
+    width :500px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border:none;
+    border-bottom: 1px solid #adadad;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.radio_btn1, .radio_btn2, .radio_btn3, .radio_btn4{
+    display: inline-block
+}
+
+.radio_btn2{
+    margin-left: 15rem;
+}
+
+.radio_btn4{
+    margin-left:12.745rem;
+}
+
+.check-box{
+    margin: 20px 10px 20px 0;
+}
+span{
+    font-size: 14px;
+    color: #5c5b5b;
+    
+}
+.already{
+    margin-left: 9.5rem;
+}
+
+button{
+    width: 300px;
+    height: 46px;
+    margin: 40px auto;
+    border-radius: 30px;
+    color: #136a8a;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    left:270px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background:#C7C7C7;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    }
+    

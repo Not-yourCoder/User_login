@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+    background-image: linear-gradient(#267871,#136a8a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: verdana;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+  }
+
+/*.form-box{
+    width: 980px;
+    height: 580px;
+    position: relative;
+    margin: 6% auto;
+    padding :5px;
+    
+}*/
+.form-box{
+    top:180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    left:500px;
+    
+}
+
+::placeholder { 
+    color: #fff;
+    opacity: 1; 
+    font-size: 20px;
+    
+  }
+.email-field, .pwd-field{
+    width :800px;
+    padding: 30px;
+    margin: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+
+}
+.check-box{
+    margin: 20px 10px 20px 0;
+}
+span{
+    font-size: 14px;
+    color: #fff;
+}
+.fpass{
+    position: relative;
+    left: 200px;
+    top:200px;
+}
+
+button{
+    width: 300px;
+    height: 46px;
+    margin: 40px auto;
+    position: relative;
+    border-radius: 30px;
+    color: #136a8a;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    left:270px;
+    transition: 0.5s;
+}
+button:hover{
+    background:#C7C7C7;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    }
+    
+p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 540px;
+    margin-left: 320px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+.tags{
+    color: #fff;
+    margin-top: 540px;
+    margin-left: 620px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+}

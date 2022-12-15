@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%load static%} <link rel="stylesheet" href={% static 'signup.css'%} />
+  </head>
+  <body>
+    <script></script>
+    <div class="container">
+      <h2>Create Account</h2>
+      <p>Great!<br />Now tell us a bit about urself</p>
+      <div id="square">
+        <div class="front">
+          <form action="#" method="POST" onsubmit="return myradio()">
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+              class="textfield"
+            />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+              class="textfield"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="textfield"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="textfield"
+            />
+            <div class="radio">
+              <div style="display: block">
+                <div  class="radio_btn1">
+                  <input type="radio" name="char1" id="rd_btn1" />
+                  <label for="rd_btn1">8 Characters</label>
+                </div>
+                <div class="radio_btn2" >
+                  <input type="radio" name="char2" id="rd_btn2" />
+                  <label for="rd_btn2">Uppercase Letters</label>
+                </div>
+              </div>
+              <div style="display: block">
+                <div class="radio_btn3">
+                  <input type="radio" name="char3" id="rd_btn3" />
+                  <label for="rd_btn3">Lowercase Letters</label>
+                </div>
+                <div class="radio_btn4" >
+                  <input type="radio" name="char4" id="rd_btn4" />
+                  <label for="rd_btn4">Numbers and Symbols</label>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Confirm Password"
+              class="textfield"
+            />
+
+            <input type="checkbox" class="check-box" /><span
+              >I agree to all the <a href="#"><b>Privacy Notice </b></a> and
+              <a href="#"> <b> Terms of Use</b></a
+              >.</span
+            >
+            <button type="button">Create Account</button>
+            <span class="already">
+              Already have an account?<a href="/signin"
+                ><b>Sign In</b></a
+              ></span
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Signin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" text ="text/css" href="{% static 'style.css'%}">
+    </head>
+    <body>
+        
+        <div class ="form-box">
+            <input type = "email" class ="email-field" placeholder ="Email" name = "email" required>
+            <input type = "password" class="pwd-field" placeholder ="Password" name = "pwd" required>
+            <input type ="checkbox" class ="check-box"><span>Remember Me</span>
+            
+            
+            <button type ="submit" class ="btn">Sign In</button>
+            
+        </div>
+            <p>Don't have an account? <a href="/signup" >Sign Up!</a></p>  
+            <a href"#" class="fpass">Forgot Password?</a>
+    </body>
+</html>
