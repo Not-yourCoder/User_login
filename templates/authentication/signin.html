@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% load static %}
-        <link rel="stylesheet" text ="text/css" href="{% static 'style.css'%}">
+        <link rel="stylesheet" text ="text/css" href="{% static 'css/signin.css'%}">
     </head>
     <body>
         
@@ -14,12 +14,30 @@
             <input type = "email" class ="email-field" placeholder ="Email" name = "email" required>
             <input type = "password" class="pwd-field" placeholder ="Password" name = "pwd" required>
             <input type ="checkbox" class ="check-box"><span>Remember Me</span>
-            
-            
             <button type ="submit" class ="btn">Sign In</button>
-            
         </div>
+        <div class="dhaa">
             <p>Don't have an account? <a href="/signup" >Sign Up!</a></p>  
-            <a href"#" class="fpass">Forgot Password?</a>
+        </div>
+            <div class="fpass">
+                <a href="/reset">Forgot Password?</a>
+            </div>
+            
     </body>
+    <div class="line-2"></div>
+    <footer>
+        <div class="footer-content">
+            <h5> &copy; 2022 All rights reserved.</h5>
+        </div>    
+            <div class="footer2">
+                <ul>
+                    <li><a href ="#">Privacy Notes</a></li>
+                    <li><a href ="#">Privacy Notes</a></li>
+                    <li><a href ="#">Privacy Notes</a></li>
+                    <li><a href ="#">Privacy Notes</a></li>
+                    <li><a href ="#">Support</a></li>
+                </ul>
+           
+        </div>
+    </footer>    
 </html>

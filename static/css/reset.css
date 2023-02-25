@@ -1,0 +1,38 @@
+body{
+    font-family: verdana;
+}
+
+h3 {
+    background-color:rgb(4, 140, 252);
+    text-align: center;
+    height:70px;
+    padding: 2.2rem;
+    font-size: 40px;
+}
+.reset-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 25px;
+    
+}
+
+.reset-form input{
+    border:1px solid #adadad;;
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.email-btn{
+    padding: 2rem;
+    
+}
+button{
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+}

@@ -4,9 +4,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: verdana;
-    margin: auto;
+    /* margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 10px; */
 
   }
 
@@ -54,9 +54,22 @@ span{
     color: #fff;
 }
 .fpass{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: -475px -270px 0 0;
+    color: #fff;
     position: relative;
     left: 200px;
     top:200px;
+    
+}
+.fpass a{
+    color: #fff;
+    font-size: 14px;
+}
+.fpass a:hover{
+    color: #d3d3d3;
 }
 
 button{
@@ -85,21 +98,57 @@ p{
     color: #fff;
     font-size: 14px;
     margin-top: 540px;
-    margin-left: 320px;
+    margin-left: 780px;
     margin-right: 100px;
     margin-bottom: 80px;
 
 }
-a{
+.dhaa{
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
     color: #fff;
+   
+    
 }
-.tags{
+.dhaa a{
     color: #fff;
-    margin-top: 540px;
-    margin-left: 620px;
-    margin-right: 100px;
-    margin-bottom: 80px;
+}
+
+.dhaa a:hover{
+     color: #C7C7C7;
+}
+
+footer h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 80px;
+    margin-right:95px;
+}
+.line-2 {
+    border-top: 1px solid #fff;
+    margin-top: 600px;
+  }
+
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 95px;
+    list-style-type: none;
+}
+
+.footer2 a{
+    color: #fff;
+}
+.footer2 a:hover{
+    color: #C7C7C7;
+}
+
+ul li{
+    display: inline;
+    padding: 40px;
 }

@@ -16,3 +16,6 @@ def signin(request):
 
 def signout(request):
     pass
+
+def reset(request):
+    return render(request,"authentication/reset.html")
