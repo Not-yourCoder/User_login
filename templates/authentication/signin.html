@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Signin</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
         <link rel="stylesheet" text ="text/css" href="{% static 'css/signin.css'%}">
-    </head>
-    <body>
-        
-        <div class ="form-box">
-            <input type = "email" class ="email-field" placeholder ="Email" name = "email" required>
-            <input type = "password" class="pwd-field" placeholder ="Password" name = "pwd" required>
-            <input type ="checkbox" class ="check-box"><span>Remember Me</span>
-            <button type ="submit" class ="btn">Sign In</button>
-        </div>
-        <div class="dhaa">
-            <p>Don't have an account? <a href="/signup" >Sign Up!</a></p>  
-        </div>
-            <div class="fpass">
-                <a href="/reset">Forgot Password?</a>
-            </div>
-            
-    </body>
-    <div class="line-2"></div>
-    <footer>
-        <div class="footer-content">
-            <h5> &copy; 2022 All rights reserved.</h5>
-        </div>    
-            <div class="footer2">
-                <ul>
-                    <li><a href ="#">Privacy Notes</a></li>
-                    <li><a href ="#">Privacy Notes</a></li>
-                    <li><a href ="#">Privacy Notes</a></li>
-                    <li><a href ="#">Privacy Notes</a></li>
-                    <li><a href ="#">Support</a></li>
-                </ul>
-           
-        </div>
-    </footer>    
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <div class="all-the-divs">
+                <div class="input-fields">
+                    <div>
+                        <input type="email" class="email-text" required>
+                    <label for="email" id ="email">Email</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" class="input-password" required>
+                        <label for="password" id ="pass-input">Password</label>
+                    </div>
+                    
+                </div>
+                <div class="radio-button">
+                    <div class="rem_pass"><input type="radio" name="rem" id="rem">Remember password</input></div>
+                    <div class="forgot_pass"><a href="#" id ="pass">Forgot Password?</a></div>       
+                </div>
+                <div class="button">
+                    <button>Sign In</button>
+                </div>
+                <div class="no-account">
+                    <p>Don't have an account?<a href="#" class="signup">&nbsp;Sign Up!</a></p>
+                </div>
+            </div>     
+        </form>
+    </div>
+        <footer>
+            <div class="line"></div>
+              <div class="lists">
+                <div class="footer-heading">
+                   <p>&copy; 2022 All rights reserved.</p>
+                </div>
+                  <ul>
+                      <li>Privacy Notice</li>
+                      <p>|</p>
+                      <li>Ads & Cookies</li>
+                      <p>|</p>
+                      <li>Terms of Use</li>
+                      <p>|</p>
+                      <li>Support</li>
+                      <p>|</p>
+                      <li>Credits</li>
+                      <p>|</p>
+                      <li>Accessibility</li>
+                  </ul>
+              </div>
+        </footer>
+    
+</body>
 </html>
