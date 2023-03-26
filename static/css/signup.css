@@ -49,8 +49,18 @@ p{
     align-items: center;
 
 }
+
+#text 
+{
+   padding-left: 15px;
+   padding-bottom: 10px;
+   font-size: 14px;
+   color: black;
+}
+
 .radio_btn1, .radio_btn2, .radio_btn3, .radio_btn4{
-    display: inline-block
+    display: inline-block;
+   
 }
 
 .radio_btn2{
@@ -73,12 +83,13 @@ span{
     margin-left: 9.5rem;
 }
 
-button{
+/* .button{
     width: 300px;
     height: 46px;
+    border: none;
     margin: 40px auto;
     border-radius: 30px;
-    color: #136a8a;
+    background-color: #136a8a;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -92,9 +103,35 @@ button{
     justify-content: center;
     align-items: center;
 }
-button:hover{
+.button:hover{
     background:#C7C7C7;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
     transition: scale(0.8);
-    }
+    } */
+
+input[type ="submit"]{
+    display: block;
+    width: 40%;
+    height: 46px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 10rem;
+    margin: 5px 0 8px 0;
     
+}    
+
+input[type ="submit"]:hover{
+    background:#d4d4d4;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    transition: scale(0.8);
+    
+}

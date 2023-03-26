@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+things having trouble with:
+1. close error messages on click
+2. want live message when typing password
