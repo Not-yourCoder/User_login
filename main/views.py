@@ -2,7 +2,7 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 def home(request):
@@ -58,7 +58,7 @@ def signin(request):
             email = request.POST.get("signin-email")
             pas= request.POST.get("signin-password")
             user = authenticate(request,email = email, password = pas)
-            print(email, pas)
+            print(pas)
 
             if user is not None:
                 login(request,user)

@@ -12,7 +12,13 @@
     </style>
   </head>
   <body>
-    
+    <center>
+      {% if messages %}
+         {% for msg in messages %}
+            <code>{{ msg }}</code>
+          {% endfor %}  
+      {% endif %} 
+    </center> 
     <h3>I Am Home!</h3>
     {% if user.is_authenticated %}
     <h3>Hello {{ fname }}</h3>

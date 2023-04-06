@@ -135,3 +135,11 @@ input[type ="submit"]:hover{
     transition: scale(0.8);
     
 }
+
+/* input[type="radio"]:disabled {
+    background-color: red;
+  } */
+
+.radio[disabled] {
+    background-color: red;
+}

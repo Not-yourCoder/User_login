@@ -6,9 +6,9 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {%load static%} 
+    {% load static %} 
     <link rel="stylesheet" href={% static 'css/signup.css'%} />
-    {% comment %} <script type = "text/javascript" src="{% static '/js/signup.js' %}"></script> {% endcomment %}
+    <script type = "text/javascript" src="{% static '/js/signup.js' %}"></script>
   </head>
   <body>
     <div class="container">
@@ -51,7 +51,7 @@
               placeholder="Password"
               class="textfield"
               minlength="8"
-              
+              onkeyup="validate()"
             />
             <input
               type="password"
@@ -60,12 +60,13 @@
               placeholder="Confirm Password"
               class="textfield"
               minlength="8"
+              onkeyup="validate()"
             />
-            <div id="text">Empty</div>
+            <div id="text" ></div>
             <div class="radio">
               <div style="display: block">
                 <div  class="radio_btn1">
-                  <input type="radio" name="char1" id="rd_btn1" />
+                  <input type="radio" name="char1" id="rd_btn1" disabled/>
                   <label for="rd_btn1">8 Characters</label>
                 </div>
                 <div class="radio_btn2" >
@@ -87,13 +88,8 @@
             <input type="checkbox" class="check-box" /><span
               >I agree to all the <a href="#"><b>Privacy Notice </b></a> and
               <a href="#"> <b> Terms of Use</b></a
-              >.</span
-            >
-            {% comment %} <button type="submit" onclick ="checkpassword()">Create Account</button> {% endcomment %}
-           
-            <input type="submit" class= "button" onclick ="checkpassword()" value="Submit">
-           
-            
+              >.</span>
+            <input type="submit" class= "button"  value="Submit">
             <span class="already">
               Already have an account?<a href="/signin"
                 ><b>Sign In</b></a
@@ -106,9 +102,4 @@
   </body>
 </html>
 
- {% comment %} <script>
-  window.setTimeout(function () {
-    location.href = "{% static 'signup' %}";
-}, 5000); // refresh/redirect after 5 seconds.
-
- </script> {% endcomment %}
+ 

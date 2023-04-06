@@ -7,4 +7,7 @@
 
 things having trouble with:
 1. close error messages on click
-2. want live message when typing password
+2. want live message when typing password - done
+3. auto fill the radio buttons when typing password - 
+4. Cannot login even with correct email and password
+5. password shows matching even when empty
