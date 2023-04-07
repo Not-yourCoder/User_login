@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: aliceblue;
-    font-family: verdana ;
+    font-family: verdana;
 }
 .input-fields{
     display: flex;

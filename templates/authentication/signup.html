@@ -6,31 +6,34 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {%load static%} 
+    {% load static %} 
     <link rel="stylesheet" href={% static 'css/signup.css'%} />
-    <script src="{% static '/js/signup.js' %}"></script>
+    <script type = "text/javascript" src="{% static '/js/signup.js' %}"></script>
   </head>
   <body>
-    <script></script>
     <div class="container">
       <h2>Create Account</h2>
-      <p>Great!<br />Now tell us a bit about urself</p>
+      <center>
+        {% if messages %}
+           {% for msg in messages %}
+              <code id = "msg" onclick="this.style.display = 'none'">{{ msg }}</code>
+            {% endfor %}  
+        {% endif %} 
+      </center> 
+      <p>Great!<br/>Now tell us a bit about urself</p>
       <div id="square">
         <div class="front">
-          <form action="#" method="POST" onsubmit="return myradio()">
+          <form action="/signup" method="POST">
+            {% csrf_token %}
             <input
-              type="text"
-              name="fname"
-              id="fname"
-              placeholder="First Name"
-              class="textfield"
-            />
+              type="text" name="fname" id="fname" placeholder="First Name" class="textfield" required/>
             <input
               type="text"
               name="lname"
               id="lname"
               placeholder="Last Name"
               class="textfield"
+              required
             />
             <input
               type="email"
@@ -38,22 +41,28 @@
               id="email"
               placeholder="Email"
               class="textfield"
+              required
             />
+              
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Password"
               class="textfield"
-              onkeyup="lenchar(obj);"
+              minlength="8"
+              onkeyup="validate()"
             />
             <input
               type="password"
-              name="password"
-              id="password"
+              name="confirm_password"
+              id="cpassword"
               placeholder="Confirm Password"
               class="textfield"
+              minlength="8"
+              onkeyup="validate()"
             />
+            <div id="text" ></div>
             <div class="radio">
               <div style="display: block">
                 <div  class="radio_btn1">
@@ -76,15 +85,11 @@
                 </div>
               </div>
             </div>
-
-            
-
-            <input type="checkbox" class="check-box" /><span
+            <input type="checkbox" class="check-box" required/><span
               >I agree to all the <a href="#"><b>Privacy Notice </b></a> and
               <a href="#"> <b> Terms of Use</b></a
-              >.</span
-            >
-            <button type="button">Create Account</button>
+              >.</span>
+            <input type="submit" class= "button"  value="Submit">
             <span class="already">
               Already have an account?<a href="/signin"
                 ><b>Sign In</b></a
@@ -96,3 +101,5 @@
     </div>
   </body>
 </html>
+
+ 
