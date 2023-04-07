@@ -140,6 +140,7 @@ input[type ="submit"]:hover{
     background-color: red;
   } */
 
-.radio[disabled] {
-    background-color: red;
+  input[type="radio"] {
+
+   pointer-events: none;
 }

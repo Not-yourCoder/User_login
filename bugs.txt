@@ -6,8 +6,10 @@
 
 
 things having trouble with:
-1. close error messages on click
+1. close error messages on click - closes when clicking on the message
 2. want live message when typing password - done
-3. auto fill the radio buttons when typing password - 
+3. auto fill the radio buttons when typing password - done
 4. Cannot login even with correct email and password
 5. password shows matching even when empty
+6. user has to agree to privacy notes otherwise he gets a alert- done
+7. display text message when all the radio buttons have not been checked-done

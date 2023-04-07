@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+import re
 
 def home(request):
     return render(request, "authentication/index.html")
@@ -28,6 +29,11 @@ def signup(request):
             messages.error(request, "Firstname and Lastname must be under 20 charcters!!")
             return redirect('signup')
         
+        regex = re.compile("(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])")
+        if not regex.search(pass1):
+            messages.error(request,"Password must meet the below conditions.")
+            return redirect('signup')
+        
         if pass1 != pass2:
             messages.error(request, "Passwords didn't match!!")
             return redirect('signup')
@@ -39,6 +45,7 @@ def signup(request):
         if pass2 == "":
             messages.error(request, "Confirm password cannot be empty")
             return redirect('signup')
+        
         
         
         

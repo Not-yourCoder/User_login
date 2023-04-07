@@ -16,7 +16,7 @@
       <center>
         {% if messages %}
            {% for msg in messages %}
-              <code>{{ msg }}</code>
+              <code id = "msg" onclick="this.style.display = 'none'">{{ msg }}</code>
             {% endfor %}  
         {% endif %} 
       </center> 
@@ -66,7 +66,7 @@
             <div class="radio">
               <div style="display: block">
                 <div  class="radio_btn1">
-                  <input type="radio" name="char1" id="rd_btn1" disabled/>
+                  <input type="radio" name="char1" id="rd_btn1" />
                   <label for="rd_btn1">8 Characters</label>
                 </div>
                 <div class="radio_btn2" >
@@ -85,7 +85,7 @@
                 </div>
               </div>
             </div>
-            <input type="checkbox" class="check-box" /><span
+            <input type="checkbox" class="check-box" required/><span
               >I agree to all the <a href="#"><b>Privacy Notice </b></a> and
               <a href="#"> <b> Terms of Use</b></a
               >.</span>
